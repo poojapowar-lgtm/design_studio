@@ -1,137 +1,104 @@
 .App {
   background-color: white;
-  font-family: calibri;
-}
-
-/* Title */
-.title {
-  font-family: calibri;
-  color: rgba(186, 1, 90, 1);
-  margin-bottom: 10px;
-  font-size: clamp(22px, 2vw, 35px);
-  font-weight: 700;
-  text-align: center;
-}
-
-
-.subtitle {
-  font-family: calibri;
-  color: rgba(69, 8, 108, 1);
-  margin: 5px;
-  font-size: clamp(16px, 3vw, 22px);
-  padding: clamp(5px, 1.5vw, 10px);
-  font-weight: 700;
-  text-align: center;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 15px;
-}
-
-/* LEFT line  */
-.subtitle::before {
-  content: "";
-  flex: 1;
-  height: 2px;
-  background: linear-gradient(to left, rgb(10, 172, 10), transparent);
-}
-
-/* RIGHT line*/
-.subtitle::after {
-  content: "";
-  flex: 1;
-  height: 2px;
-  background: linear-gradient(to right, rgb(10, 172, 10), transparent);
+  font-family: "DM Sans:Regular", sans-serif;
 }
 
 /* Paragraph */
 p {
-  font-family: calibri;
+  font-family: "Barlow", sans-serif;
   color: black;
   text-align: justify;
-  line-height: clamp(20px, 2vw, 26px);
-  font-size: clamp(12px, 1.2vw, 17px);
+  margin: 5px;
+  font-size: clamp(10px, 1.2vw, 12.5px);
 }
 
-/* List */
-.page-list {
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-  list-style: none;
-  line-height: clamp(20px, 2vw, 26px);
-  font-size: clamp(14px, 1.5vw, 18px);
-  text-align: left;
+.banner-description {
+  font-family: "DM Sans", sans-serif;;
+  color: whitesmoke;
+  font-size: 16px;
+  margin: auto 0;
+}
+
+
+.title {
+  font-family: "Bebas Neue", sans-serif;
+  font-size: clamp(32px, 4vw, 70px);
+  font-weight: 500;
+  margin: 10px 0;
+}
+
+.title span {
+  color: rgb(232, 160, 32);
+}
+
+
+.section-subtitle {
+  font-family: "DM Sans", sans-serif;
+  margin: 10px 0 0 0;
+  max-width: 500px;
+  color: #555;
+  font-size: 14px;
+}
+
+
+.subtitle {
+  font-family: "Barlow Condensed", sans-serif;
+  font-size: clamp(22px, 3vw, 35px);
   margin: 0;
 }
 
-.page-list li {
-  position: relative;
-  padding-left: 25px;
-  color: black;
-  line-height: clamp(24px, 2.2vw, 30px);
-  font-size: clamp(12px, 1.2vw, 16px);
+.banner-title1,
+.banner-title2 {
+  font-family: "Bebas Neue", sans-serif;
+  word-break: break-word;
+  font-style: normal;
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 90px;
+  margin: 5px 0;
+  transform-origin: left center;
 }
 
-.page-list li::before {
-  content: "➤";
+.banner-title1 {
+  color: rgb(232, 160, 32);
+}
+
+.banner-title2 {
+  color: white;
+}
+
+/* Top small text */
+.banner-top-text {
+  font-family: "Space Mono", monospace;
+  word-break: break-word;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-size: 10.5px;
+  font-weight: 700px;
+  color: rgb(232, 160, 32);
+  margin-bottom: 30px !important;
+  padding-top: 2.5%;
+  font-weight: 500;
+}
+
+
+/* HEADER */
+.tag {
+  font-size: 12px;
+  letter-spacing: 2px;
+  color: rgb(232, 160, 32);
+  margin-bottom: 10px;
+  position: relative;
+  padding-left: 40px;
+}
+
+.tag::before {
+  content: "";
   position: absolute;
   left: 0;
-  top: 2px;
-  color: goldenrod;
-  font-size: 16px;
-}
-
-/* Primary Button */
-.btn {
-  background-color: #008a00;
-  color: #ffffff;
-  padding: clamp(5px, 1vw, 12px) clamp(12px, 3vw, 24px);
-  border: none;
-  border-radius: clamp(8px, 2vw, 16px);
-  font-size: clamp(12px, 1.2vw, 16px);
-  font-weight: 500;
-  cursor: pointer;
-  transition: 0.3s ease;
-  margin-top: 0;
-}
-
-.btn:hover,
-.btn.active {
-  background: none;
-  border: 1px solid #008a00;
-  color: black;
-}
-
-/* Secondary Button */
-.second-btn {
-  background: none;
-  border: 1px solid #008a00;
-  color: black;
-  padding: clamp(8px, 1vw, 10px) clamp(16px, 2vw, 20px);
-  border-radius: clamp(10px, 1.5vw, 16px);
-  font-size: clamp(14px, 1.4vw, 16px);
-  font-weight: 500;
-  cursor: pointer;
-  transition: 0.3s ease;
-}
-
-.second-btn:hover {
-  background-color: #008a00;
-  color: #ffffff;
-}
-
-.btn2 {
-  border: 1px solid #008a00;
-  color: #008a00;
-  padding: clamp(5px, 1vw, 12px) clamp(12px, 3vw, 24px);
-  border-radius: clamp(8px, 2vw, 16px);
-  font-size: clamp(12px, 1.2vw, 16px);
-  font-weight: 500;
-  cursor: pointer;
-  transition: 0.3s ease;
-}
-
-.btn2:hover {
-  background: none;
-  border: 1px solid#008A00;
-  color: black;
+  top: 50%;
+  width: 30px;
+  height: 1px;
+  background: rgb(232, 160, 32);
+  transform: translateY(-50%);
 }

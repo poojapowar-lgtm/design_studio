@@ -1,10 +1,11 @@
 import "./App.css";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
-import MainRoutes from "./Routes/MainRoutes";
+
 import ScrollToTop from "./Components/ScrollToTop";
 import Footer from "./Components/Footer/Footer";
 import Header from "./Components/header/Header";
+import MainRoutes from "./MainRoutes";
 
 
 

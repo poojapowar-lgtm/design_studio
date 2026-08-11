@@ -3,161 +3,75 @@
   display: flex;
   justify-content: center;
   position: relative;
-  /* Top + Bottom Shadow */
-  box-shadow: 
-    0 -10px 20px rgba(0, 0, 0, 0.2),  /* top shadow */
-    0 10px 20px rgba(0, 0, 0, 0.2);   /* bottom shadow */
+  box-shadow:
+    0 -10px 20px rgba(0, 0, 0, 0.2),
+    0 10px 20px rgba(0, 0, 0, 0.2);
 }
-
 
 .banner-image {
   position: relative;
-  background: url("/public/assets/images/home/cdoe_banner.png") center / cover no-repeat;
+  background: url("/public/assets/images/banner.avif") center / cover no-repeat;
   width: 100%;
   height: 95vh;
+  overflow: hidden;
 }
 
-.banner-card {
+/* Overlay opacity */
+.banner-image::before {
+  content: "";
   position: absolute;
-  bottom: clamp(10px, 4vw, 30px);
-  left: 50%;
-  transform: translateX(-50%); /* centers horizontally */
-  padding: clamp(10px, 2vw, 20px) clamp(15px, 2vw, 30px);
-  margin-bottom: 20px;
-  text-align: center;
-  
+  inset: 0;
+  background: rgba(0, 0, 0, 0.6);
+  z-index: 1;
 }
 
-.banner-title {
-  color: white;
-  margin: 0;
-  font-size: clamp(16px, 2vw, 28px);
-  font-weight: 600;
-}
 
-/* Vertical Button */
-.enquiry-btn {
-  position: fixed;
-  font-size: clamp(12px, 3vw, 16px);
-  padding: clamp(8px, 2.5vw, 15px);
-  right: 0;
-  top: 50%;
-  transform: rotate(-90deg) translateY(-50%);
-  transform-origin: right center;
-  background: red;
-  color: white;
-  border: none;
-  cursor: pointer;
-  z-index: 9999;
-  border-radius: 5px 5px 0 0;
-}
-
-/* Modal Background */
-.enquiry-modal {
-  position: fixed;
-  border: 1px solid #97c600;
-  top: 0;
-  right: 0;
-  width: 100%;
-  height: 100%;
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-  z-index: 1000;
-}
-
-/* Add this fix */
-.enquiry-modal:empty {
-  display: none;
-}
-
-/* Modal Box */
-.enquiry-content {
-  background: #fff;
-  border-radius: 15px 0 0 15px;
+/* Keep content above overlay */
+.banner-content {
   position: relative;
-  width: clamp(260px, 85vw, 380px);
+  z-index: 2;
 }
 
-/* Close Button */
-.close-btn {
-  position: absolute;
-  top: 10px;
-  right: 15px;
-  cursor: pointer;
-  font-size: 18px;
+.banner-center {
+  margin-left: 20%;
 }
 
-
-/* enquiry */
-.enquiry-container {
-  width: 100%;
-  margin: 0 auto;
-}
-
-.enquiry-top {
-  background: #97c600;
-  border-top-left-radius: 15px;
-  padding: 20px;
-}
-
-.enquiry-title {
-  text-align: center;
-  margin: 0px;
-
-}
-
-.enquiry-form {
-  padding: 20px;
-}
-
-.enquiry-form input,
-.enquiry-form select {
-  width: 95%;
-  padding: clamp(8px, 2.5vw, 12px);
-  margin: 10px auto;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-}
-
-.enquiry-form select {
-  width: 100%;
-}
-
-.enquiry-form button {
-  display: block;
-  margin: 0 auto;
-  width: clamp(120px, 50%, 200px);
-  padding: clamp(8px, 2.5vw, 12px);
-  font-size: clamp(13px, 3.5vw, 16px);
-  background-color: #007bff;
-  color: #fff;
+/* Button */
+.banner-btn {
+  font-family: "Barlow Condensed", sans-serif;;
+  padding: 10px 30px;
+  margin-top: 20px;
   border: none;
+  background: rgb(232, 160, 32);
+  font-size: 14px;
   cursor: pointer;
-  border-radius: 4px;
+  transition: 0.3s ease;
 }
 
-.enquiry-form button:hover {
-  background-color: #0056b3;
+
+.banner-btn:hover {
+  background: white;
+  transform: translateY(-3px);
 }
 
-@media (max-width: 768px) {
-  .banner-image {
-    width: 100%;
-    height: 20vh;
+
+/* Mobile */
+@media(max-width:768px) {
+
+  .banner {
+    min-height: 500px;
+    padding: 30px 20px;
+    align-items: center;
   }
 
-  .banner-card {
-    max-width: 90%;
+
+  .banner-content {
+    max-width: 100%;
   }
 
-  .enquiry-modal {
-    justify-content: center;
-    /* center on small screens */
-  }
 
-  .enquiry-content {
-    border-radius: 15px;
+  .banner-content h1 {
+    font-size: clamp(28px, 8vw, 42px);
   }
 
 }

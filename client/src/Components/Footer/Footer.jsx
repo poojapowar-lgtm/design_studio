@@ -38,7 +38,7 @@ const Footer = () => {
         <div className="footer-links">
           <img
             className="ft-logo1"
-            src="/assets/images/home/mit_logo.webp"
+            src="/assets/images/icons/logo.PNG"
             alt="Logo 1"
           />
           <p className="ft-address">
@@ -46,49 +46,45 @@ const Footer = () => {
             Loni Kalbhor, Solapur Highway,
             Pune, 412201. Maharashtra , India
           </p>
+          <p className="bottom-text">
+            MIT-DESIGN STUDIO Pune © 2026. All Rights Reserved. Designed & Developed by
+            MIT-ADT Website Department.
+          </p>
         </div>
 
         <div className="links-section">
           <div className="footer-links">
-            <h4>Quick Links</h4>
+            <h4>STUDIO</h4>
             <ul>
-              <li>Home</li>
-              <li>About</li>
-              <li>Contact Us</li>
+              <li>About Us</li>
+              <li>Our Team</li>
+              <li>Services</li>
             </ul>
           </div>
 
           <div className="footer-links">
-            <h4>Programs</h4>
+            <h4>WORK</h4>
             <ul>
-              <li>MBA</li>
-              <li>BBA</li>
-              <li>Quadrant System</li>
-            </ul>
-          </div>
-
-
-          <div className="footer-links">
-            <h4>Admission</h4>
-            <ul>
-              <li>Why CDOE ?</li>
-              <li>Why should enroll ?</li>
+              <li>All Project</li>
+              <li>Branding</li>
+              <li>Digital</li>
             </ul>
           </div>
 
 
           <div className="footer-links">
-            <h4>Academics</h4>
+            <h4>CONNECT</h4>
             <ul>
-              <li>  Fee Structure</li>
-              <li>Align With NEP</li>
+              <li>Instagram</li>
+              <li>contact</li>
             </ul>
           </div>
+
         </div>
 
 
 
-        <div className="footer-links">
+        {/* <div className="footer-links">
           <div className="footer-social">
             <div className="footer-social-icons">
               {socialIconsData.map(({ url, network, bgColor }, index) => (
@@ -110,7 +106,7 @@ const Footer = () => {
             referrerpolicy="no-referrer-when-downgrade"
           ></iframe>
 
-        </div>
+        </div> */}
 
       </div>
 
@@ -121,13 +117,7 @@ const Footer = () => {
         </button>
       )}
 
-      {/* FOOTER BOTTOM */}
-      <div className="footer-bottom">
-        <p className="bottom-text">
-          MIT-CDOE Pune © 2026. All Rights Reserved. Designed & Developed by
-          MIT-ADT Website Department.
-        </p>
-      </div>
+
     </footer>
   );
 };

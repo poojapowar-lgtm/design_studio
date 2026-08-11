@@ -1,13 +1,13 @@
 .footer {
-  background: linear-gradient(90deg,
-      rgba(186, 1, 90, 1),
-      rgba(69, 8, 108, 1));
+  border-top: 1px solid rgb(232, 160, 32);
+  background:black;
   color: white;
   padding: clamp(10px, 2vw, 25px) 10px;
 }
 
 
 .ft-logo1 {
+  background-color: white;
   height: clamp(52px, 6vw, 85px);
 }
 
@@ -18,7 +18,7 @@
 .footer-container {
   display: flex;
   justify-content: center;
-  gap: clamp(20px, 3vw, 50px);
+  gap: 100px;
   padding-top: 20px;
   flex-wrap: wrap;
 }
@@ -27,7 +27,7 @@
 .links-section {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  gap: 20px;
+  gap: 150px;
   text-align: left;
 }
 
@@ -38,8 +38,8 @@
 
 
 .footer-links h4 {
-  font-size: clamp(14px, 1.5vw, 20px);
-  color: goldenrod;
+  font-size: clamp(12px, 1.5vw, 16px);
+  color: rgb(232, 160, 32);
   margin: 0;
 }
 
@@ -52,7 +52,7 @@
 
 .footer-links li {
   margin-bottom: 6px;
-  font-size: clamp(12px, 1.2vw, 18px);
+  font-size: clamp(10px, 1.2vw, 14px);
 }
 
 .footer-links a {
@@ -109,10 +109,9 @@
 }
 
 .bottom-text {
-  color: wheat;
+  color: goldenrod;
   font-size: clamp(10px, 1.2vw, 15px);
   margin: 0 auto;
-  text-align: center;
 }
 
 .back-to-top {

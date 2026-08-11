@@ -1,259 +1,41 @@
-import React, { useState } from "react";
+import React from "react";
 import "./Header.css";
-import { RiHome3Fill } from "react-icons/ri";
-import { IoMdArrowDropdown } from "react-icons/io";
-import { GiHamburgerMenu } from "react-icons/gi";
-import { IoMdClose } from "react-icons/io";
 import { Link } from "react-router-dom";
-import { navMenus, DeskHamburgerMenus, subMenus } from "./navMenus";
-import { SocialIcon } from "react-social-icons";
-import socialIconsData from "../socialIconsData";
-import {
-  FaFacebookF,
-  FaInstagram,
-  FaLinkedinIn,
-  FaTwitter,
-} from "react-icons/fa";
+import { navMenus } from "./navMenus";
 
 const Header = () => {
-  const [menuOpen, setMenuOpen] = useState(false);
-  const [isOpen, setIsOpen] = useState(false);
-  const [openDropdown, setOpenDropdown] = useState(null);
-
-  const allMenus = [...navMenus, ...DeskHamburgerMenus];
-
-  const toggleDropdown = (key) => {
-    setOpenDropdown(openDropdown === key ? null : key);
-  };
-
-  const closeMenu = () => {
-    setIsOpen(false);
-    setOpenDropdown(null);
-  };
-
   return (
     <header className="header">
 
-      {/* Left Logo Section */}
-      <div className="logo-section">
-        <div className="desk-hamburger"> <GiHamburgerMenu onClick={() => setMenuOpen(true)} /></div>
-
-        {menuOpen && (
-          <div className="desk-menu">
-            {/* Top Bar */}
-            <div className="desk-header">
-              <img src="/assets/images/home/mit_logo_black.webp" alt="logo" className="desk-logo" />
-              <div className="desk-close-btn" onClick={() => setMenuOpen(false)}><IoMdClose /></div>
-            </div>
-
-            {/* Menu Items */}
-            <ul className="desk-list">
-              {DeskHamburgerMenus.map((item) => (
-                <li key={item.key}>
-                  {item.to ? (
-                    <Link to={item.to}>
-                      {item.key === "home" ? <RiHome3Fill /> : item.title}
-                    </Link>
-                  ) : (
-                    <>
-                      <span className="nav-item">
-                        {item.title}
-                        <IoMdArrowDropdown className="dropdown-icon" />
-                      </span>
-                      {item.columns && (
-                        <ul className="dropdown-menu">
-                          {item.columns.map((sub, index) => (
-                            <li key={index}><Link to={sub.to}>{sub.name}</Link></li>
-                          ))}
-                        </ul>
-                      )}
-                    </>
-                  )}
-                </li>
-              ))}
-            </ul>
-
-
-            <div className="social-icons">
-              {socialIconsData.map(({ url, network, bgColor }, index) => (
-                <SocialIcon
-                  key={index}
-                  className="social-icons"
-                  url={url}
-                  network={network}
-                  bgColor={bgColor}
-                />
-              ))}
-            </div>
-            <p style={{ margin: "0 auto", textAlign: "center" }}>
-              MIT Art, Design and Technology University, <br />
-              Rajbaug, Loni Kalbhor, Solapur Highway, Pune, 412201. Maharashtra , India
-            </p>
-          </div>
-
-        )}
-        <img src="/assets/images/home/cdoe.svg" alt="Logo 1" className="logo1" />
-        {/* <div className="logo2-section">
-          <img src="/assets/images/home/SoFT_Logo.png" alt="Logo 2" className="logo2" />
-          <div className="logo-text">
-            <h1 className="logo-title">MIT-SoFT</h1>
-            <p className="logo-subtitle">School of Food Technology</p>
-          </div>
-        </div> */}
-
-        {/* <div >
-          <h1 class="logo-title">
-            <span>C</span>
-            <span>D</span>
-            <span>O</span>
-            <span>E</span>
-          </h1>
-          <p className="logo-text">Center for Distance and Online Education</p>
-        </div> */}
-
-      </div>
-
       {/* Desktop Nav */}
       <nav className="nav-section">
-        {/* <ul className="sub-navbar">
-          {subMenus.map((item) => (
-            <li key={item.key} className="submenu-item">
-              {item.to ? (
-                <Link to={item.to}>{item.title}</Link>
-              ) : (
-                <>
-                  <span className="nav-item">
-                    {item.title}
-                    <IoMdArrowDropdown />
-                  </span>
-                  {item.columns && (
-                    <ul className="dropdown-menu">
-                      {item.columns.map((sub, index) => (
-                        <li key={index}><Link to={sub.to}>{sub.name}</Link></li>
-                      ))}
-                    </ul>
-                  )}
-                </>
-              )}
-            </li>
-          ))}
-        </ul> */}
         <ul className="main-navbar">
           {navMenus.map((item) => (
             <li key={item.key}>
-              {item.to ? (
-                <Link to={item.to}>
-                  {item.key === "home" ? <RiHome3Fill /> : item.title}
-                </Link>
-              ) : (
-                <>
-                  <span className="nav-item">
-                    {item.title}
-                    <IoMdArrowDropdown className="dropdown-icon" />
-                  </span>
-                  {item.columns && (
-                    <ul className="dropdown-menu">
-                      {item.columns.map((sub, index) => (
-                        <li key={index}><Link to={sub.to}>{sub.name}</Link></li>
-                      ))}
-                    </ul>
-                  )}
-                </>
-              )}
+              <Link to={item.to}>
+                {item.key === "home" ? (
+                  <img
+                    src="/assets/images/icons/logo.PNG"
+                    alt="Logo"
+                    className="logo1"
+                  />
+                ) : (
+                  item.title
+                )}
+              </Link>
             </li>
           ))}
         </ul>
       </nav>
 
-      {/* Mobile Sidebar */}
-      {!isOpen && (
-        <div className="hamburger" onClick={() => setIsOpen(true)}>
-          <GiHamburgerMenu />
-        </div>
-      )}
-
-      <div className={`mobile-menu ${isOpen ? "active" : ""}`}>
-        <div className="close-btn" onClick={closeMenu}><IoMdClose /></div>
-
-
-        {/* <ul className="mobile-main-navbar">
-          {navMenus.map((item) => (
-            <li key={item.key}>
-              {item.to ? (
-                <Link to={item.to} onClick={closeMenu}>
-                  {item.key === "home" ? <RiHome3Fill /> : item.title}
-                </Link>
-              ) : (
-                <>
-                  <span onClick={() => toggleDropdown(item.key)}>
-                    {item.title} <IoMdArrowDropdown className={openDropdown === item.key ? "rotated" : ""} />
-                  </span>
-                  <ul className={`mobile-dropdown ${openDropdown === item.key ? "open" : ""}`}>
-                    {item.columns.map((sub, index) => (
-                      <li key={index}><Link to={sub.to} onClick={closeMenu}>{sub.name}</Link></li>
-                    ))}
-                  </ul>
-                </>
-              )}
-            </li>
-          ))}
-        </ul> */}
-        <ul className="mobile-main-navbar">
-          {allMenus.map((item) => (
-            <li key={item.key}>
-              {item.to ? (
-                <Link to={item.to} onClick={closeMenu}>
-                  {item.key === "home" ? <RiHome3Fill /> : item.title}
-                </Link>
-              ) : (
-                <>
-                  <span onClick={() => toggleDropdown(item.key)}>
-                    {item.title}
-                    <IoMdArrowDropdown
-                      className={openDropdown === item.key ? "rotated" : ""}
-                    />
-                  </span>
-
-                  {item.columns && (
-                    <ul
-                      className={`mobile-dropdown ${openDropdown === item.key ? "open" : ""
-                        }`}
-                    >
-                      {item.columns.map((sub, index) => (
-                        <li key={index}>
-                          <Link to={sub.to} onClick={closeMenu}>
-                            {sub.name}
-                          </Link>
-                        </li>
-                      ))}
-                    </ul>
-                  )}
-                </>
-              )}
-            </li>
-          ))}
-        </ul>
-
-        {/* <ul className="mobile-sub-navbar">
-          {subMenus.map((item) => (
-            <li key={item.key}>
-              <span onClick={() => toggleDropdown(item.key)}>
-                {item.title} <IoMdArrowDropdown className={openDropdown === item.key ? "rotated" : ""} />
-              </span>
-              {item.columns && (
-                <ul className={`mobile-dropdown ${openDropdown === item.key ? "open" : ""}`}>
-                  {item.columns.map((sub, index) => (
-                    <li key={index}><Link to={sub.to} onClick={closeMenu}>{sub.name}</Link></li>
-                  ))}
-                </ul>
-              )}
-            </li>
-          ))}
-        </ul> */}
-
+      {/* Right Logo */}
+      <div className="logo-section">
+        <img
+          src="/assets/images/icons/logo2.avif"
+          alt="Logo 2"
+          className="logo2"
+        />
       </div>
-
-      {isOpen && <div className="menu-overlay" onClick={closeMenu} />}
 
     </header>
   );

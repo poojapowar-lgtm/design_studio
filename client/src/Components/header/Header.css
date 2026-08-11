@@ -1,58 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@600&display=swap');
+
 /* HEADER */
 .header {
   background: white;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 10px clamp(15px, 6vw, 60px);
+  padding: 0px clamp(15px, 6vw, 60px);
   flex-wrap: wrap;
 }
 
 /* LOGO */
 .logo1 {
-  height: clamp(50px, 5.5vw, 80px);
-  padding-left: clamp(10px, 2.5vw, 40px);
+  height: 150px;
 }
 
-/* .logo-section {
-  display: flex;
-  align-items: center;
-  gap: clamp(20px, 2vw, 40px);
+.logo2 {
+  height: 40px;
 }
-
-.logo2-section {
-  display: flex;
-  align-items: center;
-  gap: clamp(5px, 2vw, 10px);
-} */
-
-
-
-/* .logo-title {
-  margin: 0;
-  font-family: serif;
-  font-size: clamp(30px, 5vw, 45px);
-  font-weight: 700;
-  display: flex;
-  gap: clamp(4px, 1vw, 8px);
-  padding-bottom: 5px;
-  border-bottom: 1px solid black;
-}
-
-.logo-title span {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  width: clamp(25px, 6vw, 45px);
-  height: clamp(25px, 6vw, 40px);
-  background: rgba(69, 8, 108, 1);
-  color: white;
-}
-
-.logo-text {
-  font-size: clamp(12px, 2vw, 18px);
-  margin: 0;
-} */
 
 /* NAVBAR */
 .navbar {
@@ -61,8 +26,30 @@
 
 .nav-section {
   display: flex;
-  flex-direction: column;
-  align-items: flex-end;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.main-navbar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.main-navbar li {
+  display: flex;
+  align-items: center;
+}
+
+.main-navbar li a {
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .sub-navbar,
@@ -78,7 +65,7 @@
 .main-navbar li {
   font-family: calibri;
   position: relative;
-
+  padding: 0 20px;
 }
 
 .sub-navbar li span.nav-item,
@@ -97,9 +84,11 @@
 
 .sub-navbar li a,
 .main-navbar li a {
-  font-family: calibri;
+  font-family: "Barlow", sans-serif;
+  text-transform: uppercase;
   color: black;
   font-size: clamp(9.5px, 1.2vw, 15.5px);
+  font-weight: 500;
   text-decoration: none;
 }
 
@@ -108,18 +97,18 @@
 .main-navbar li span.nav-item {
   font-size: clamp(12px, 1.2vw, 18px);
   font-weight: 600;
-  color: rgba(69, 8, 108, 1);
+  color: black;
 }
 
 /* DROPDOWN ICONS */
 .sub-navbar svg,
 .main-navbar svg {
   font-size: clamp(20px, 2vw, 28px);
-  color: rgba(186, 1, 90, 1);
+  color: black;
 }
 
 .main-navbar svg {
-  color: rgba(69, 8, 108, 1);
+  color: black;
 }
 
 

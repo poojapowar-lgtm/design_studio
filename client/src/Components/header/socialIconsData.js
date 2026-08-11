@@ -14,11 +14,7 @@ const socialIconsData = [
     network: "youtube",
     bgColor: "#FF0000",
   },
-  // {
-  //   url: "https://twitter.com",
-  //   network: "twitter",
-  //   bgColor: "#1DA1F2",
-  // },
+
   {
     url: "https://www.instagram.com/manetpune_official?igsh=MTJhdjV0ejZlamwwbg%3D%3D&utm_source=qr",
     network: "instagram",

@@ -1,49 +1,35 @@
-import React, { useState } from "react";
+import React from "react";
 import "./Banner.css";
 
-
 const Banner = () => {
-  const [showForm, setShowForm] = useState(false);
-
   return (
-    <>
-      <div className="banner-container">
-        <div className="banner-image">
-          {/* Card Inside Image */}
-          {/* <div className="banner-card">
-            <h2 className="banner-title">
-             Center for Distance and Online Education (CDOE) at MIT-ADT University
-            </h2>
-          </div> */}
+    <section className="banner-container">
+      <div className="banner-image">
+        <div className="banner-content">
+          <p className="banner-top-text">
+            MITID Design Studio • Pune, India
+          </p>
+
+          <div className="banner-center">
+            <h1 className="banner-title1"> Design Consultancy</h1>
+            <h1 className="banner-title2">Industry Projects </h1>
+            <h1 className="banner-title2"> & Industry Training</h1>
+
+
+            <p className="banner-description">
+              Our design services are best in class,<br />
+              combining creativity with strategic insights to deliver exceptional<br />
+              results.
+            </p>
+
+            <button className="banner-btn">
+              ABOUT US
+            </button>
+          </div>
+
         </div>
       </div>
-
-      {/* Vertical Button */}
-      {/* {!showForm && (
-        <button
-          className="enquiry-btn"
-          onClick={() => setShowForm(true)}
-        >
-          Enquiry
-        </button>
-      )} */}
-
-      {/* Popup Form */}
-      {/* {showForm && (
-        <div className="enquiry-modal">
-          <div className="enquiry-content">
-            <span
-              className="close-btn"
-              onClick={() => setShowForm(false)}
-            >
-              ✖
-            </span>
-
-            <EnquiryForm />
-          </div>
-        </div>
-      )} */}
-    </>
+    </section>
   );
 };
 
