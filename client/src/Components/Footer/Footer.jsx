@@ -38,7 +38,7 @@ const Footer = () => {
         <div className="footer-links">
           <img
             className="ft-logo1"
-            src="/assets/images/icons/logo.PNG"
+            src="/assets/images/icons/logo.png"
             alt="Logo 1"
           />
           <p className="ft-address">
