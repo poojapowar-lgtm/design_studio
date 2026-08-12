@@ -73,11 +73,11 @@ const TeamSection = () => {
                 {member.desc}
               </p>
 
-              <div className="icons">
+              {/* <div className="icons">
                 <span>in</span>
                 <span>ig</span>
                 <span>m</span>
-              </div>
+              </div> */}
 
             </div>
           ))}
