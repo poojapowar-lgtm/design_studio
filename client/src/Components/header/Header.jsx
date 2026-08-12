@@ -15,7 +15,7 @@ const Header = () => {
               <Link to={item.to}>
                 {item.key === "home" ? (
                   <img
-                    src="/assets/images/icons/logo.jpeg"
+                    src="/assets/images/icons/logo.png"
                     alt="Logo1"
                     className="logo1"
                   />
