@@ -1,15 +1,15 @@
 import React from "react";
 import { FaArrowUp } from "react-icons/fa";
-import { SocialIcon } from "react-social-icons";
+// import { SocialIcon } from "react-social-icons";
 import { useState, useEffect } from "react";
-import socialIconsData from "../socialIconsData";
-import {
-  FaFacebookF,
-  FaInstagram,
-  FaLinkedinIn,
-  FaTwitter,
-} from "react-icons/fa";
-import "./Footer.css";
+// import socialIconsData from "../socialIconsData";
+// import {
+//   FaFacebookF,
+//   FaInstagram,
+//   FaLinkedinIn,
+//   FaTwitter,
+// } from "react-icons/fa";
+// import "./Footer.css";
 
 const Footer = () => {
   const [showButton, setShowButton] = useState(false);
