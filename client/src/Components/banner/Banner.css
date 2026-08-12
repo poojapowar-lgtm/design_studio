@@ -38,7 +38,8 @@
 
 /* Button */
 .banner-btn {
-  font-family: "Barlow Condensed", sans-serif;;
+  font-family: "Barlow Condensed", sans-serif;
+  ;
   padding: 10px 30px;
   margin-top: 20px;
   border: none;
@@ -64,14 +65,21 @@
     align-items: center;
   }
 
+  .banner-image {
+  height: 75vh;
+}
+
+  .banner-center {
+    margin: 0 20px;
+  }
 
   .banner-content {
     max-width: 100%;
   }
 
 
-  .banner-content h1 {
-    font-size: clamp(28px, 8vw, 42px);
+  .banner-top-text {
+    margin: 0 auto;
   }
 
 }

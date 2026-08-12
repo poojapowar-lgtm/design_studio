@@ -9,14 +9,12 @@ p {
   color: black;
   text-align: justify;
   margin: 5px;
-  font-size: clamp(10px, 1.2vw, 12.5px);
+  font-size: clamp(11px, 1.2vw, 12.5px);
 }
 
 .banner-description {
-  font-family: "DM Sans", sans-serif;
-  ;
+  font-family: "DM Sans", sans-serif;;
   color: whitesmoke;
-  font-size: 16px;
   margin: auto 0;
 }
 
@@ -55,7 +53,7 @@ p {
   font-style: normal;
   text-transform: uppercase;
   font-weight: 500;
-  font-size: 90px;
+  font-size:  clamp(45px, 4vw, 90px);
   margin: 5px 0;
   transform-origin: left center;
 }
@@ -74,7 +72,7 @@ color: white;
   font-size: 10.5px;
   font-weight: 700px;
   color: rgb(232, 160, 32);
-  margin-bottom: 30px !important;
+  margin: 30px !important;
   padding-top: 2.5%;
   font-weight: 500;
 }
