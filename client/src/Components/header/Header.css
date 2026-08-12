@@ -85,7 +85,7 @@
 
 .logo2 {
   width: auto;
-  height: clamp(25px, 2.7vw, 40px);
+  height: clamp(20px, 2.7vw, 40px);
   display: block;
 }
 
@@ -198,11 +198,6 @@
     color: #000;
   }
 
-
-  /*RIGHT LOGO*/
-  .logo2 {
-    height: clamp(22px, 5vw, 30px);
-  }
 }
 
 
