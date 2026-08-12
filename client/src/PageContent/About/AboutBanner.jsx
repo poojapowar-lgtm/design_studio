@@ -41,9 +41,8 @@ const AboutBanner = () => {
                             MITID Design Studio • Pune, India
                         </p>
 
-                        <h1 className="banner-title2" style={{ fontSize: "clamp(16px, 3vw, 45px)" }}>Where Ideas</h1>
-                        <h1 className="banner-title2" style={{ fontSize: "clamp(16px, 3vw, 45px)" }}>Meet</h1>
-                        <h1 className="banner-title1" style={{ fontSize: "clamp(16px, 3vw, 45px)" }}>Impact</h1>
+                        <h1 className="banner-title" style={{ fontSize: "clamp(16px, 3vw, 45px)" }}> <span>Where Ideas Meet </span>Impact</h1>
+
 
                         <p className="banner-description">
                             MIT Institute of Design Studio — crafting meaningful design solutions, along with distinctive visual id entities, digital experiences, and spatial environments for brands that dare to be different.
@@ -58,7 +57,7 @@ const AboutBanner = () => {
                         {cards.map((card) => (
                             <div className="about-bnr-card" key={card.id}>
                                 <div className="about-card-overlay">
-                                    <h1 className="banner-title1" style={{ margin: "0", fontSize: "clamp(16px, 3vw, 45px)" }}>{card.title}</h1>
+                                    <h1 className="banner-title" style={{ margin: "0", fontSize: "clamp(16px, 3vw, 45px)" }}>{card.title}</h1>
                                     <p style={{ textTransform: "uppercase", color:"white"}}>{card.subtitle}</p>
                                 </div>
                             </div>

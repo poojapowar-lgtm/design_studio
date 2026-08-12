@@ -13,7 +13,8 @@ p {
 }
 
 .banner-description {
-  font-family: "DM Sans", sans-serif;;
+  font-family: "DM Sans", sans-serif;
+  ;
   color: whitesmoke;
   font-size: 16px;
   margin: auto 0;
@@ -47,10 +48,10 @@ p {
   margin: 0;
 }
 
-.banner-title1,
-.banner-title2 {
+.banner-title {
   font-family: "Bebas Neue", sans-serif;
   word-break: break-word;
+  color: rgb(232, 160, 32);
   font-style: normal;
   text-transform: uppercase;
   font-weight: 500;
@@ -59,13 +60,10 @@ p {
   transform-origin: left center;
 }
 
-.banner-title1 {
-  color: rgb(232, 160, 32);
+.banner-title span {
+color: white;
 }
 
-.banner-title2 {
-  color: white;
-}
 
 /* Top small text */
 .banner-top-text {

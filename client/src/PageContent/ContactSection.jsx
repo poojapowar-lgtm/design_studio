@@ -53,7 +53,7 @@ export default function ContactSection() {
         </div>
 
         {/* RIGHT SIDE */}
-        <div className="contact right">
+        <div className="contact-right">
           <form className="form">
                       <h4>SEND US A MESSAGE</h4>
             <div className="row">

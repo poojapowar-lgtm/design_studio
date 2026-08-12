@@ -256,7 +256,7 @@ export default function ServicesAccordion() {
 
                           return (
                             <div
-                              className="card"
+                              className="service-card"
                               key={cardId}
                             >
 
@@ -267,10 +267,10 @@ export default function ServicesAccordion() {
                               />
 
                               {/* NORMAL CARD OVERLAY */}
-                              <div className="card-overlay">
+                              <div className="service-card-overlay">
 
                                 {/* TITLE LEFT */}
-                                <div className="card-title">
+                                <div className="service-card-title">
                                   {card.title}
                                 </div>
 
@@ -294,7 +294,7 @@ export default function ServicesAccordion() {
                               {/* CONTENT OVERLAY */}
                               {activeCard === cardId && (
                                 <div
-                                  className="card-content-overlay"
+                                  className="service-card-content-overlay"
                                   onClick={() =>
                                     setActiveCard(null)
                                   }

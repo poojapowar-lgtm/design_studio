@@ -11,10 +11,7 @@ const Banner = () => {
           </p>
 
           <div className="banner-center">
-            <h1 className="banner-title1"> Design Consultancy</h1>
-            <h1 className="banner-title2">Industry Projects </h1>
-            <h1 className="banner-title2"> & Industry Training</h1>
-
+            <h1 className="banner-title"> Design Consultancy<br/><span>Industry Projects <br/> & Industry Training</span></h1>
 
             <p className="banner-description">
               Our design services are best in class,<br />

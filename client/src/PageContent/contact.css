@@ -1,6 +1,6 @@
 .contact {
   background: rgb(245, 244, 240);
-  padding: 60px ;
+  padding: clamp(20px, 1.5vw, 60px) ;
   font-family: sans-serif;
 }
 
@@ -73,14 +73,14 @@
 .hours p{
   color: whitesmoke;
 }
+
 /* RIGHT */
-.contact right {
+.contact-right {
   background: #fff;
-  padding: clamp(20px, 3vw, 40px);
   border: 1px solid #ddd;
 }
 
-.contact right h4 {
+.contact-right h4 {
   margin-bottom: 20px;
 }
 

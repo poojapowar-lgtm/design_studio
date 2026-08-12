@@ -1,31 +1,31 @@
-/* MAIN CONTAINER */
+/*ABOUT BANNER */
 .about-bnr-content {
   position: relative;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
   justify-content: flex-start;
-  padding: 0 60px;
-  gap: 30%;
+  align-items: center;
+  padding: 0 clamp(20px, 4vw, 60px);
+  gap: clamp(40px, 12vw, 30%);
   z-index: 2;
 }
 
 .about-bnr-left {
   flex: 1;
-  min-width: 150px;
-  max-width: 250px;
+  min-width: clamp(150px, 15vw, 250px);
+  max-width: clamp(200px, 22vw, 250px);
 }
 
 .about-bnr-right {
-  max-width: 800px;
+  max-width: clamp(500px, 55vw, 800px);
   flex: 1;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
+  gap: clamp(10px, 2vw, 20px);
 }
 
 .about-bnr-card {
-  margin-bottom: 20px;
-  height: 420px;
+  margin-bottom: clamp(10px, 1.5vw, 20px);
+  height: clamp(280px, 25vw, 380px);
   position: relative;
   overflow: hidden;
   border: 0.5px solid rgba(232, 160, 32, 0.5);
@@ -35,22 +35,23 @@
   position: absolute;
   bottom: 0;
   left: 0;
-  padding: 15px;
+  padding: clamp(10px, 1.5vw, 15px);
   width: 100%;
   box-sizing: border-box;
 }
 
-/* studio */
+
+/* STUDIO */
 .studio {
-  background: #D9D9D9B2;
-  padding: 60px 80px;
+  background: #d9d9d9b2;
+  padding: clamp(35px, 5vw, 60px)
+           clamp(25px, 6vw, 80px);
 }
 
 .studio-container {
   display: flex;
-  gap: 40px;
+  gap: clamp(25px, 4vw, 40px);
 }
-
 
 .studio-left {
   flex: 1;
@@ -58,8 +59,9 @@
 
 .studio-desc {
   line-height: 1.6;
-  margin: 10px 0;
+  margin: clamp(8px, 1vw, 10px) 0;
   color: #333;
+  font-size: clamp(13px, 1.2vw, 16px);
 }
 
 .studio-desc.small {
@@ -69,35 +71,35 @@
 .studio-services {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  margin-top: 30px;
+  margin-top: clamp(20px, 3vw, 30px);
   border-top: 1px solid #ddd;
   border-left: 1px solid #ddd;
 }
 
 .service-box {
-  background-color: white;
-  padding: 10px;
+  background-color: #fff;
+  padding: clamp(8px, 1vw, 10px);
   border-right: 1px solid #ddd;
   border-bottom: 1px solid #ddd;
 }
 
 .service-box span {
   font-family: "Bebas Neue", sans-serif;
-  font-size: 20px;
+  font-size: clamp(16px, 1.6vw, 20px);
   color: rgb(232, 160, 32);
   font-weight: bold;
   display: block;
-  margin-bottom: 0px;
+  margin-bottom: 0;
 }
 
 .service-box h4 {
   font-family: "Barlow Condensed", sans-serif;
-  font-size: 11px;
-  margin: 5px 0;
+  font-size: clamp(10px, 0.9vw, 11px);
+  margin: clamp(4px, 0.5vw, 5px) 0;
 }
 
 .service-box p {
-  font-size: 12px;
+  font-size: clamp(10px, 1vw, 12px);
   color: #555;
   margin: auto 0;
 }
@@ -106,17 +108,22 @@
   flex: 1;
 }
 
+
+/*
+   IMAGE GRID */
+
 .image-grid {
   display: grid;
   grid-template-columns: 2fr 1fr;
-  grid-template-rows: 150px 150px;
-  gap: 2px;
+  grid-template-rows: clamp(110px, 10vw, 150px)
+                     clamp(110px, 10vw, 150px);
+  gap: clamp(2px, 0.3vw, 4px);
 }
 
 .img {
   background-size: cover;
   background-position: center;
-  border-radius: 4px;
+  border-radius: clamp(3px, 0.4vw, 4px);
 }
 
 .img.large {
@@ -132,51 +139,56 @@
   background-image: url("/public/assets/images/studio3.webp");
 }
 
-/* STATS */
+
+/*
+   STATS */
+
 .stats {
   display: flex;
   justify-content: space-between;
   background: #fff;
 }
 
-.stats>* {
+.stats > * {
   flex: 1;
   border-right: 1px solid #ddd;
-  padding: 14px;
+  padding: clamp(10px, 1.2vw, 14px);
 }
 
-.stats>*:last-child {
+.stats > *:last-child {
   border-right: none;
 }
 
 .stats h3 {
   font-family: fantasy;
   font-weight: 400 !important;
-  font-size: 25px;
+  font-size: clamp(20px, 2vw, 25px);
   color: rgb(232, 160, 32);
   margin: 0;
 }
 
 .stats p {
   color: rgb(70, 69, 69);
-  font-size: 10px;
-  margin: 5px 0 0;
+  font-size: clamp(9px, 0.8vw, 10px);
+  margin: clamp(3px, 0.5vw, 5px) 0 0;
 }
 
-/* TeamSection */
+
+/*
+   TEAM SECTION */
+
 .team {
   background: #f5f3ef;
-  padding: 60px 80px;
+  padding: clamp(35px, 5vw, 60px)
+           clamp(25px, 6vw, 80px);
 }
 
 .team-header .tag {
-  font-size: 12px;
-  letter-spacing: 2px;
+  font-size: clamp(10px, 1vw, 12px);
+  letter-spacing: clamp(1px, 0.2vw, 2px);
   color: rgb(232, 160, 32);
-  margin-bottom: 10px;
+  margin-bottom: clamp(7px, 1vw, 10px);
 }
-
-
 
 .team-slider {
   position: relative;
@@ -185,155 +197,159 @@
   justify-content: center;
 }
 
-
 .nav {
   background: none;
   border: none;
-  font-size: 30px;
+  font-size: clamp(22px, 2.5vw, 30px);
   cursor: pointer;
-  margin: 10px;
+  margin: clamp(5px, 1vw, 10px);
 }
-
 
 .team-cards {
   display: flex;
-  gap: 30px;
-  margin: 0 20px;
+  gap: clamp(15px, 2.5vw, 30px);
+  margin: 0 clamp(10px, 1.5vw, 20px);
 }
 
 .team-card {
-  width: 300px;
+  width: clamp(220px, 22vw, 300px);
 }
 
 .team-card img {
   width: 100%;
-  height: 320px;
+  height: clamp(240px, 24vw, 320px);
   object-fit: cover;
   filter: grayscale(100%);
 }
 
-
 .team-card .desc {
-  font-size: 13px;
-  margin-top: 15px;
+  font-size: clamp(11px, 1vw, 13px);
+  margin-top: clamp(10px, 1.2vw, 15px);
   color: #333;
+  line-height: 1.5;
 }
-
 
 .icons {
   display: flex;
-  gap: 10px;
+  gap: clamp(6px, 0.8vw, 10px);
 }
 
 .icons span {
-  width: 35px;
-  height: 35px;
+  width: clamp(28px, 3vw, 35px);
+  height: clamp(28px, 3vw, 35px);
   background: #000;
   color: #fff;
   display: flex;
   align-items: center;
   justify-content: center;
   border-radius: 50%;
-  font-size: 12px;
+  font-size: clamp(10px, 1vw, 12px);
 }
 
 
-/* inspiration */
+/* INSPIRATION */
+.inspiration {
+  background: #d9d9d9b2;
+  padding: clamp(35px, 5vw, 60px)
+           clamp(25px, 6vw, 80px);
+  font-family: "Bebas Neue", sans-serif;
+}
+
 .leader-post {
   font-family: "Barlow Condensed", sans-serif;
   color: #aaa;
-  font-size: 30px;
+  font-size: clamp(22px, 2.5vw, 30px);
   font-weight: 400;
   line-height: 1;
-  margin-bottom: 8px;
+  margin-bottom: clamp(6px, 0.8vw, 8px);
   text-transform: uppercase;
 }
-
 
 .leader-name {
   font-family: "Barlow Condensed", sans-serif;
   color: rgb(232, 160, 32);
-  font-size: 35px;
+  font-size: clamp(27px, 3vw, 35px);
   font-weight: 500;
   line-height: 0.95;
   text-transform: uppercase;
 }
-
 
 .leader-surname {
   font-family: "Barlow Condensed", sans-serif;
   color: #fff;
-  font-size: 35px;
+  font-size: clamp(27px, 3vw, 35px);
   font-weight: 500;
   line-height: 0.95;
   text-transform: uppercase;
 }
-
-.inspiration {
-  background: #D9D9D9B2;
-  padding: 60px 80px;
-  font-family: "Bebas Neue", sans-serif;
-}
-
-
 
 .inspiration-header .title span {
   color: rgb(232, 160, 32);
 }
 
 .inspiration-header .subtitle {
-  margin-top: 10px;
-  max-width: 500px;
+  margin-top: clamp(7px, 1vw, 10px);
+  max-width: clamp(350px, 40vw, 500px);
   color: #555;
-  font-size: 14px;
+  font-size: clamp(11px, 1.1vw, 14px);
+  line-height: 1.5;
 }
 
-/* CARDS */
+
+/*INSPIRATION CARDS */
 .inspiration-cards {
   display: flex;
   justify-content: center;
   overflow: hidden;
-  gap: 40px;
-  margin-top: 50px;
+  gap: clamp(20px, 3vw, 40px);
+  margin-top: clamp(30px, 4vw, 50px);
 }
 
 .inspiration-card {
-  width: 300px;
+  width: clamp(220px, 22vw, 300px);
   position: relative;
+  flex-shrink: 0;
 }
+
 
 /* IMAGE */
 .inspiration-card img {
   width: 100%;
-  height: 320px;
+  height: clamp(240px, 24vw, 320px);
   object-fit: cover;
   display: block;
   filter: grayscale(100%);
 }
 
-/* OVERLAY */
+
+/* LEADER OVERLAY */
 .leader-overlay {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
-  height: 320px;
+  height: clamp(240px, 24vw, 320px);
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
   align-items: flex-start;
-  padding: 25px 22px;
+  padding: clamp(15px, 2vw, 25px)
+           clamp(15px, 1.8vw, 22px);
   box-sizing: border-box;
   color: #fff;
-  background: linear-gradient(to top,
-      rgba(0, 0, 0, 0.75) 0%,
-      rgba(0, 0, 0, 0.2) 60%,
-      rgba(0, 0, 0, 0) 100%);
-
+  background: linear-gradient(
+    to top,
+    rgba(0, 0, 0, 0.75) 0%,
+    rgba(0, 0, 0, 0.2) 60%,
+    rgba(0, 0, 0, 0) 100%
+  );
   opacity: 0;
   visibility: hidden;
-  transition: opacity 0.4s ease, visibility 0.4s ease;
+  transition:
+    opacity 0.4s ease,
+    visibility 0.4s ease;
 }
+
 
 /* SHOW ON CARD HOVER */
 .inspiration-card:hover .leader-overlay {
@@ -344,9 +360,178 @@
 
 /* DESCRIPTION */
 .inspiration-card .desc {
-  margin: 15px 0;
+  margin: clamp(10px, 1.2vw, 15px) 0;
   font-family: "DM Sans", sans-serif;
-  font-size: 13px;
+  font-size: clamp(11px, 1vw, 13px);
   line-height: 1.6;
   color: #222;
+}
+
+
+/*TABLET */
+@media (max-width: 900px) {
+  .about-bnr-content {
+    gap: clamp(30px, 6vw, 60px);
+  }
+
+  .studio-container {
+    gap: clamp(20px, 4vw, 35px);
+  }
+
+  .team-cards {
+    gap: clamp(15px, 2vw, 25px);
+  }
+
+  .inspiration-cards {
+    gap: clamp(15px, 3vw, 30px);
+  }
+}
+
+
+/* MOBILE */
+
+@media (max-width: 768px) {
+  .about-bnr-content {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: clamp(25px, 6vw, 40px);
+    padding: 0 clamp(15px, 5vw, 30px);
+  }
+
+  .about-bnr-left {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .about-bnr-right {
+    width: 100%;
+    max-width: 100%;
+
+  }
+
+.about-bnr-card{
+    max-height: 100px;
+}
+
+  /* STUDIO */
+  .studio {
+    padding: clamp(30px, 7vw, 45px)
+             clamp(15px, 5vw, 30px);
+  }
+
+  .studio-container {
+    flex-direction: column;
+    gap: clamp(25px, 6vw, 40px);
+  }
+
+
+
+  .image-grid {
+    grid-template-rows:
+      clamp(120px, 35vw, 200px)
+      clamp(120px, 35vw, 200px);
+  }
+
+
+  /* STATS */
+  .stats {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .stats > * {
+    border-bottom: 1px solid #ddd;
+  }
+
+  .stats > *:nth-child(2) {
+    border-right: none;
+  }
+
+  .stats > *:nth-last-child(-n + 2) {
+    border-bottom: none;
+  }
+
+
+  /* TEAM */
+  .team {
+    padding: clamp(30px, 7vw, 45px)
+             clamp(15px, 5vw, 30px);
+  }
+
+  .team-cards {
+    width: 100%;
+    overflow-x: auto;
+    justify-content: flex-start;
+    padding-bottom: 10px;
+    scrollbar-width: none;
+  }
+
+  .team-cards::-webkit-scrollbar {
+    display: none;
+  }
+
+  .team-card {
+    min-width: clamp(220px, 65vw, 300px);
+  }
+
+
+  /* INSPIRATION */
+
+  .inspiration {
+    padding: clamp(30px, 7vw, 45px)
+             clamp(15px, 5vw, 30px);
+  }
+
+  .inspiration-cards {
+    justify-content: flex-start;
+    overflow-x: auto;
+    padding-bottom: 10px;
+    scrollbar-width: none;
+  }
+
+  .inspiration-cards::-webkit-scrollbar {
+    display: none;
+  }
+
+  .inspiration-card {
+    min-width: clamp(220px, 70vw, 300px);
+  }
+
+  /* On touch devices, keep overlay visible */
+  .inspiration-card .leader-overlay {
+    opacity: 1;
+    visibility: visible;
+  }
+}
+
+
+/*SMALL MOBILE */
+@media (max-width: 480px) {
+  .image-grid {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows:
+      clamp(100px, 32vw, 150px)
+      clamp(100px, 32vw, 150px);
+  }
+
+  .stats {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .stats > * {
+    padding: clamp(8px, 2vw, 12px);
+  }
+
+  .team-card {
+    min-width: 75vw;
+  }
+
+  .inspiration-card {
+    min-width: 75vw;
+  }
+
+  .leader-name,
+  .leader-surname {
+    font-size: clamp(25px, 8vw, 32px);
+  }
 }
