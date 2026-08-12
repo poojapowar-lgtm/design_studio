@@ -9,7 +9,7 @@ import { useState, useEffect } from "react";
 //   FaLinkedinIn,
 //   FaTwitter,
 // } from "react-icons/fa";
-// import "./Footer.css";
+import "./Footer.css";
 
 const Footer = () => {
   const [showButton, setShowButton] = useState(false);
