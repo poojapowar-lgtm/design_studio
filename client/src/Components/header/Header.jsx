@@ -16,7 +16,7 @@ const Header = () => {
                 {item.key === "home" ? (
                   <img
                     src="/assets/images/icons/logo.PNG"
-                    alt="Logo"
+                    alt="Logo1"
                     className="logo1"
                   />
                 ) : (
@@ -32,7 +32,7 @@ const Header = () => {
       <div className="logo-section">
         <img
           src="/assets/images/icons/logo2.avif"
-          alt="Logo 2"
+          alt="Logo2"
           className="logo2"
         />
       </div>

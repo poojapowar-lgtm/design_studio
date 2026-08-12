@@ -10,13 +10,6 @@ export const navMenus = [
   // about us
   {
     key: "aboutus",
-    title: "About Us",
-    to: "/about-us"
-  },
-
-  // about us
-  {
-    key: "aboutus",
     title: "ABOUT US",
     to: "/about-us"
   },
