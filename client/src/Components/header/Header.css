@@ -101,9 +101,15 @@
   cursor: pointer;
 }
 
+/* Hide map on desktop */
+.mobile-map {
+  display: none;
+}
+
 
 /* MOBILE */
 @media (max-width: 768px) {
+
   /*HAMBURGER*/
   .mobile-menu-btn {
     display: flex;
@@ -140,8 +146,8 @@
     display: flex;
     align-items: flex-start;
     justify-content: flex-start;
-    padding: clamp(75px, 15vw, 110px)
-             clamp(25px, 7vw, 50px);
+    flex-direction: column;
+    padding: clamp(75px, 15vw, 110px) clamp(25px, 7vw, 50px);
     box-sizing: border-box;
     transform: translateX(-100%);
     transition: transform 0.3s ease;
@@ -198,49 +204,19 @@
     color: #000;
   }
 
+  /* MAP BELOW MENU */
+  .mobile-map {
+    display: block;
+    width: 100%;
+    margin-top: 25px;
+    padding: 0;
+  }
+
+  .mobile-map .map {
+    width: 100%;
+    height: 150px;
+    display: block;
+    border: 0;
+    border-radius: 10px;
+  }
 }
-
-
-/*SMALL MOBILE */
-/* 
-@media (max-width: 480px) {
-  .header {
-    min-height: 60px;
-  }
-
-  .mobile-menu-btn {
-    left: 10px;
-        top: 25%;
-    font-size: clamp(22px, 7vw, 28px);
-  }
-
-  .header-logo-link {
-    margin-left: 35px;
-  }
-
-  .logo1 {
-    height: 75px;
-  }
-
-  .logo2 {
-    height: 25px;
-  }
-
-  .nav-section {
-    padding-top: 75px;
-    padding-left: 25px;
-    padding-right: 25px;
-  }
-
-  .main-navbar {
-    gap: clamp(15px, 5vw, 25px);
-  }
-
-  .main-navbar li a {
-    font-size: clamp(15px, 4.5vw, 19px);
-  }
-
-  .mobile-home-icon {
-    font-size: clamp(23px, 6vw, 28px);
-  }
-} */
