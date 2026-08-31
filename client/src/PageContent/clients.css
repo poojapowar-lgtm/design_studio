@@ -47,12 +47,12 @@
 .logo-item {
   flex: 0 0 auto;
   text-align: center;
-  width: clamp(100px, 10vw, 150px);
+  width: clamp(100px, 10vw, 130px);
 }
 
 
 .logo-item img {
-  width: clamp(60px, 6vw, 120px);
+  width: clamp(60px, 6vw, 100px);
   height: 120px;
   object-fit: contain;
   display: block;
@@ -63,7 +63,7 @@
     font-family: "Bebas Neue", sans-serif;
   display: block;
   text-transform: uppercase;
-  font-size: clamp(15px, 1.5vw, 20px);
+  font-size: clamp(12px, 1.5vw, 18px);
   color: #444;
 }
 

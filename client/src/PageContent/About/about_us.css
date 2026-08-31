@@ -25,7 +25,7 @@
 
 .about-bnr-card {
   margin-bottom: clamp(10px, 1.5vw, 20px);
-  height: clamp(280px, 25vw, 380px);
+  height: clamp(150px, 20vw, 350px);
   position: relative;
   overflow: hidden;
   border: 0.5px solid rgba(232, 160, 32, 0.5);
@@ -124,6 +124,7 @@
   background-size: cover;
   background-position: center;
   border-radius: clamp(3px, 0.4vw, 4px);
+    filter: grayscale(100%);
 }
 
 .img.large {
@@ -369,7 +370,7 @@
 
 
 /*TABLET */
-@media (max-width: 900px) {
+@media (max-width: 1040px) {
   .about-bnr-content {
     gap: clamp(30px, 6vw, 60px);
   }
@@ -409,9 +410,9 @@
 
   }
 
-.about-bnr-card{
+/* .about-bnr-card{
     max-height: 100px;
-}
+} */
 
   /* STUDIO */
   .studio {

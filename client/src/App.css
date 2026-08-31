@@ -1,51 +1,61 @@
 .App {
   background-color: white;
-  font-family: "DM Sans:Regular", sans-serif;
+  font-family: "DM Sans", sans-serif;
 }
 
-/* Paragraph */
+/*  GLOBAL PARAGRAPH*/
+
 p {
   font-family: "Barlow", sans-serif;
   color: black;
   text-align: justify;
-  margin: 5px;
-  font-size: clamp(11px, 1.2vw, 12.5px);
+  margin: clamp(4px, 0.5vw, 8px);
+  font-size: clamp(11px, 1.2vw, 15px);
+  line-height: clamp(1.4, 1.6vw, 1.7);
 }
 
+/*  BANNER*/
 .banner-description {
-  font-family: "DM Sans", sans-serif;;
+  font-family: "DM Sans", sans-serif;
   color: whitesmoke;
   margin: auto 0;
+  font-size: clamp(12px, 1.2vw, 17px);
+  line-height: clamp(1.4, 1.6vw, 1.7);
 }
 
+/*  MAIN TITLE*/
 
 .title {
   font-family: "Bebas Neue", sans-serif;
   font-size: clamp(32px, 4vw, 70px);
   font-weight: 500;
-  margin: 10px 0;
+  margin: clamp(8px, 1vw, 15px) 0;
+  line-height: 1;
 }
 
 .title span {
   color: rgb(232, 160, 32);
 }
 
-
+/*  SECTION SUBTITLE*/
 .section-subtitle {
   font-family: "DM Sans", sans-serif;
-  margin: 10px 0 0 0;
-  max-width: 500px;
+  margin: clamp(8px, 1vw, 15px) 0 0 0;
+  max-width: clamp(300px, 40vw, 500px);
   color: #555;
-  font-size: 14px;
+  font-size: clamp(12px, 1.1vw, 14px);
+  line-height: clamp(1.4, 1.5vw, 1.7);
 }
 
-
+/*  SUBTITLE*/
 .subtitle {
   font-family: "Barlow Condensed", sans-serif;
   font-size: clamp(22px, 3vw, 35px);
   margin: 0;
+  line-height: 1.1;
 }
 
+/*  BANNER TITLE*/
 .banner-title {
   font-family: "Bebas Neue", sans-serif;
   word-break: break-word;
@@ -53,39 +63,38 @@ p {
   font-style: normal;
   text-transform: uppercase;
   font-weight: 500;
-  font-size:  clamp(45px, 4vw, 90px);
-  margin: 5px 0;
+  font-size: clamp(45px, 5vw, 90px);
+  margin: clamp(4px, 0.5vw, 10px) 0;
+  line-height: clamp(0.9, 4.5vw, 1);
   transform-origin: left center;
 }
 
 .banner-title span {
-color: white;
+  color: white;
 }
 
+/*  BANNER TOP TEXT*/
 
-/* Top small text */
 .banner-top-text {
   font-family: "Space Mono", monospace;
   word-break: break-word;
   text-transform: uppercase;
-  letter-spacing: 3px;
-  font-size: 10.5px;
-  font-weight: 700px;
-  color: rgb(232, 160, 32);
-  margin: 30px !important;
-  padding-top: 2.5%;
+  letter-spacing: clamp(1px, 0.25vw, 3px);
+  font-size: clamp(8px, 0.8vw, 10.5px);
   font-weight: 500;
+  color: rgb(232, 160, 32);
+  margin: clamp(15px, 2vw, 30px) 10px !important;
+  padding-top: clamp(10px, 2.5vw, 30px);
 }
 
-
-/* HEADER */
+/*  HEADER TAG*/
 .tag {
-  font-size: 12px;
-  letter-spacing: 2px;
+  font-size: clamp(9px, 0.9vw, 12px);
+  letter-spacing: clamp(1px, 0.15vw, 2px);
   color: rgb(232, 160, 32);
-  margin-bottom: 10px;
+  margin-bottom: clamp(6px, 0.8vw, 10px);
   position: relative;
-  padding-left: 40px;
+  padding-left: clamp(25px, 3vw, 40px);
 }
 
 .tag::before {
@@ -93,8 +102,8 @@ color: white;
   position: absolute;
   left: 0;
   top: 50%;
-  width: 30px;
-  height: 1px;
+  width: clamp(20px, 2.2vw, 30px);
+  height: clamp(1px, 0.1vw, 2px);
   background: rgb(232, 160, 32);
   transform: translateY(-50%);
 }

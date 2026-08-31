@@ -4,7 +4,7 @@ export default function ContactSection() {
   return (
     <section className="contact">
       <div className="container">
-        
+
         {/* LEFT SIDE */}
         <div className="left">
           <p className="tag">CONTACT US</p>
@@ -21,8 +21,7 @@ export default function ContactSection() {
               <div>
                 <span>VISIT US</span>
                 <p>
-                  Vishwanjaya, Loni Kalbhor <br />
-                  Pune, Maharashtra 412201
+                  Rajbaug, Loni Kalbhor, <br />Pune - Solapur Highway, Pune - 412201, <br />Maharashtra, India.
                 </p>
               </div>
             </div>
@@ -31,7 +30,7 @@ export default function ContactSection() {
               <div className="icon"></div>
               <div>
                 <span>EMAIL</span>
-                <p>studio@mitid.edu.in</p>
+                <p>Sohnit.Kumar@mituniversity.edu.in</p>
               </div>
             </div>
 
@@ -55,7 +54,7 @@ export default function ContactSection() {
         {/* RIGHT SIDE */}
         <div className="contact-right">
           <form className="form">
-                      <h4>SEND US A MESSAGE</h4>
+            <h4>SEND US A MESSAGE</h4>
             <div className="row">
               <input type="text" placeholder="First Name" />
               <input type="text" placeholder="Last Name" />

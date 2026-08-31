@@ -7,7 +7,7 @@ const Banner = () => {
       <div className="banner-image">
         <div className="banner-content">
           <p className="banner-top-text">
-            MITID Design Studio • Pune, India
+            --------MITID Design Studio • Pune, India
           </p>
 
           <div className="banner-center">

@@ -23,7 +23,7 @@
 
 .logo1 {
   width: auto;
-  height: clamp(70px, 9vw, 150px);
+  height: clamp(70px, 9vw, 130px);
   display: block;
 }
 
@@ -85,7 +85,7 @@
 
 .logo2 {
   width: auto;
-  height: clamp(20px, 2.7vw, 40px);
+  height: clamp(20px, 2.7vw, 50px);
   display: block;
 }
 
@@ -192,7 +192,7 @@
 
   .main-navbar li a {
     width: 100%;
-    font-size: clamp(16px, 4vw, 22px);
+    font-size: clamp(10px, 4vw, 16px);
     padding: clamp(4px, 1vw, 8px) 0;
   }
 
@@ -207,7 +207,7 @@
   /* MAP BELOW MENU */
   .mobile-map {
     display: block;
-    width: 100%;
+    width: 80%;
     margin-top: 25px;
     padding: 0;
   }

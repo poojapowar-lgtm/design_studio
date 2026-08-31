@@ -7,7 +7,7 @@ const clients = [
   { name: "INDIAN RAILWAYS", img: "/assets/images/clients/Indian-Railways.png" },
   { name: "ECIL", img: "/assets/images/clients/ECIL.png" },
   { name: "Saint-Gobain", img: "/assets/images/clients/Saint-Gobain.png" },
-  { name: "Thermax Ltd", img: "/assets/images/clients/Samsung.png" },
+  { name: "Thermax Ltd", img: "/assets/images/clients/Thermax.png" },
   { name: "MAHARASHTRA BAMBOO ", img: "/assets/images/clients/MAHARASHTRA-BAMBOO.png" },
   { name: "Volkswagen", img: "/assets/images/clients/Volkswagen.png" },
   { name: "IPR", img: "/assets/images/clients/IPR.png" },

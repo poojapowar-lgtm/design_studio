@@ -9,9 +9,9 @@
 
 /* FOOTER LOGO */
 .ft-logo1 {
-  background-color: #fff;
+  /* background-color: #fff; */
   width: auto;
-  height: clamp(52px, 6vw, 85px);
+  height: clamp(52px, 6vw, 100px);
   display: block;
 }
 

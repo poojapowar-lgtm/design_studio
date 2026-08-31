@@ -1,14 +1,7 @@
 import React from "react";
 import { FaArrowUp } from "react-icons/fa";
-// import { SocialIcon } from "react-social-icons";
 import { useState, useEffect } from "react";
-// import socialIconsData from "../socialIconsData";
-// import {
-//   FaFacebookF,
-//   FaInstagram,
-//   FaLinkedinIn,
-//   FaTwitter,
-// } from "react-icons/fa";
+import { Link } from "react-router-dom";
 import "./Footer.css";
 
 const Footer = () => {
@@ -38,7 +31,7 @@ const Footer = () => {
         <div className="footer-links">
           <img
             className="ft-logo1"
-            src="/assets/images/icons/logo.png"
+            src="/assets/images/icons/logo_white.png"
             alt="Logo 1"
           />
           <p className="ft-address">
@@ -53,18 +46,34 @@ const Footer = () => {
           <div className="footer-links">
             <h4>STUDIO</h4>
             <ul>
-              <li>About Us</li>
-              <li>Our Team</li>
-              <li>Services</li>
+              <li>
+                <Link to="/about-us">About Us</Link>
+              </li>
+
+              <li>
+                <Link to="/about-us">Our Team</Link>
+              </li>
+
+              <li>
+                <Link to="/services">Services</Link>
+              </li>
             </ul>
           </div>
 
           <div className="footer-links">
             <h4>WORK</h4>
             <ul>
-              <li>All Project</li>
-              <li>Branding</li>
-              <li>Digital</li>
+              <li>
+                <Link to="/work">All Projects</Link>
+              </li>
+
+              <li>
+                <Link to="/work">Branding</Link>
+              </li>
+
+              <li>
+                <Link to="/work">Industrial Design</Link>
+              </li>
             </ul>
           </div>
 
@@ -72,7 +81,15 @@ const Footer = () => {
           <div className="footer-links">
             <h4>CONNECT</h4>
             <ul>
-              <li>Instagram</li>
+              <li>
+                <a
+                  href="https://www.instagram.com/mitiddesignstudio?igsi=MWFzczYyc2U4b3hzbA%3D%3D&utm_source=qr"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Instagram
+                </a>
+              </li>
               <li>contact</li>
             </ul>
           </div>
