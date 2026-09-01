@@ -23,7 +23,7 @@ export default function ServicesAccordion() {
         },
         {
           image: "/assets/images/innerpage/design-strategy2.avif",
-          title: "Design Strategy, Research & Innovation",
+          title: "Product Design (Industrial & Mobility)",
           content: [
             "We create user-centric products that balance functionality, aesthetics, and manufacturability.",
             "Includes: Industrial Design • Transportation & Mobility Design • CMF Design • Prototyping • Design for Manufacturing"
