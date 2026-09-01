@@ -9,18 +9,6 @@
 }
 
 
-.top h2 {
-  font-size: clamp(28px, 4vw, 48px);
-  margin-bottom: 10px;
-}
-
-.top p {
-  max-width: 500px;
-  color: #666;
-  font-size: clamp(14px, 1.2vw, 16px);
-}
-
-
 .logos-wrapper {
   width: 100%;
   background-color: white;
@@ -33,7 +21,7 @@
 .logos {
   display: flex;
   align-items: center;
-  gap: clamp(30px, 6vw, 90px);
+  gap: clamp(20px, 5vw, 90px);
   width: max-content;
   animation: logoScroll 25s linear infinite;
 }

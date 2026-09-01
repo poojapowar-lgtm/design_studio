@@ -13,17 +13,6 @@
 }
 
 
-.left h2 {
-  font-size: clamp(28px, 4vw, 48px);
-  margin-bottom: 10px;
-}
-
-.subtext {
-  color: #666;
-  font-size: clamp(14px, 1.2vw, 16px);
-  margin-bottom: 30px;
-}
-
 .info h4 {
   margin-bottom: 20px;
 }
@@ -123,9 +112,6 @@ button {
   transition: 0.3s;
 }
 
-button:hover {
-  background: #e0951c;
-}
 
 /* RESPONSIVE */
 @media (max-width: 900px) {

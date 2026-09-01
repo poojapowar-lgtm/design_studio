@@ -1,4 +1,4 @@
-import React from "react";
+import { useRef } from "react";
 import "./about_us.css";
 
 const teamData = [
@@ -16,7 +16,7 @@ const teamData = [
     name: "HARSHIT",
     surname: "DESAI",
     img: "/assets/images/HARSHIT_DESAI.avif",
-    desc: `With 15+ years in Design Management and Innovation, Harshit bridges industry, government, and academia at the intersection of design, tech, and business. He is currently pursuing a PhD on the business value of design.`,
+    desc: `Harshit Desai With 15+ years in Design Management and Innovation, Harshit bridges industry, government, and academia at the intersection of design, tech, and business. He is currently pursuing a PhD on the business value of design.`,
   },
   {
     id: 3,
@@ -29,6 +29,20 @@ const teamData = [
 ];
 
 const TeamSection = () => {
+  const cardsRef = useRef(null);
+
+  const scrollCards = (direction) => {
+    if (cardsRef.current) {
+      const scrollAmount = cardsRef.current.clientWidth * 0.8;
+
+      cardsRef.current.scrollBy({
+        left: direction === "left" ? -scrollAmount : scrollAmount,
+        behavior: "smooth",
+      });
+    }
+  };
+
+
   return (
     <section className="team">
       <div className="team-header">
@@ -43,18 +57,25 @@ const TeamSection = () => {
       </div>
 
       <div className="team-slider">
-        <button className="nav left">‹</button>
 
-        <div className="inspiration-cards">
+        <button
+          className="nav left"
+          onClick={() => scrollCards("left")}
+          aria-label="Previous"
+        >
+          ‹
+        </button>
+
+        <div className="inspiration-cards" ref={cardsRef}>
           {teamData.map((member) => (
             <div className="inspiration-card" key={member.id}>
 
               <img
                 src={member.img}
                 alt={`${member.name} ${member.surname}`}
+                draggable="false"
               />
 
-              {/* Overlay */}
               <div className="leader-overlay">
                 <div className="leader-post">
                   {member.post}
@@ -73,18 +94,20 @@ const TeamSection = () => {
                 {member.desc}
               </p>
 
-              {/* <div className="icons">
-                <span>in</span>
-                <span>ig</span>
-                <span>m</span>
-              </div> */}
-
             </div>
           ))}
         </div>
 
-        <button className="nav right">›</button>
+        <button
+          className="nav right"
+          onClick={() => scrollCards("right")}
+          aria-label="Next"
+        >
+          ›
+        </button>
+
       </div>
+
     </section>
   );
 };

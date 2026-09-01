@@ -37,6 +37,20 @@ p {
   color: rgb(232, 160, 32);
 }
 
+.innerpage-title {
+  font-size: clamp(28px, 4vw, 48px);
+  margin-bottom: 10px;
+
+}
+
+
+.title-desc {
+  max-width: 600px;
+  color: #666;
+  font-size: clamp(14px, 1.2vw, 16px);
+  margin-bottom: 30px;
+}
+
 /*  SECTION SUBTITLE*/
 .section-subtitle {
   font-family: "DM Sans", sans-serif;
@@ -80,7 +94,7 @@ p {
   word-break: break-word;
   text-transform: uppercase;
   letter-spacing: clamp(1px, 0.25vw, 3px);
-  font-size: clamp(8px, 0.8vw, 10.5px);
+  font-size: clamp(9px, 0.8vw, 12px);
   font-weight: 500;
   color: rgb(232, 160, 32);
   margin: clamp(15px, 2vw, 30px) 10px !important;

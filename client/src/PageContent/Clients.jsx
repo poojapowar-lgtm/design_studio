@@ -19,8 +19,8 @@ export default function Clients() {
       <div className="clients">
         {/* TEXT */}
         <div className="top">
-          <h2>TRUSTED BY</h2>
-          <p>
+          <h2 className="innerpage-title">TRUSTED BY</h2>
+          <p className="title-desc">
             We work with organisations that believe design changes outcomes —
             from government bodies to global corporations.
           </p>

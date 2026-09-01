@@ -6,7 +6,6 @@
            clamp(20px, 15vw, 15%);
 }
 
-
 .services-section {
   max-width: 1200px;
   margin: 0 auto;
@@ -43,7 +42,7 @@
   font-family: "Bebas Neue", sans-serif;
   letter-spacing: clamp(0.5px, 0.1vw, 1px);
   font-weight: 400;
-  font-size: clamp(25px, 3.5vw, 45px);
+  font-size: clamp(23px, 3.5vw, 45px);
   margin: 0;
   line-height: 1.1;
 }
@@ -68,7 +67,6 @@
 
 
 /*EXPANDED SECTION */
-
 .service-expand {
   max-height: 0;
   overflow: hidden;
@@ -114,7 +112,7 @@
 
 .service-card img {
   width: 100%;
-  height: clamp(220px, 20vw, 280px);
+  height: clamp(200px, 20vw, 280px);
   display: block;
   object-fit: cover;
   transition: transform 0.4s ease;

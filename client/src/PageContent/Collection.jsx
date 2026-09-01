@@ -42,7 +42,7 @@ const projects = [
     category: "BRANDING",
     img: "/assets/images/innerpage/collection6.avif",
   },
-    {
+  {
     title: "CANDLE PACKAGING",
     category: "BRANDING",
     img: "/assets/images/innerpage/collection7.webp",
@@ -60,10 +60,10 @@ export default function Collection() {
   return (
     <section className="collection-container">
       <div className="collection">
-        <p className="cl-subtitle">OUR WORK</p>
-        <h2 className="cl-title">COLLECTION</h2>
+        <p className="tag">OUR WORK</p>
+        <h2 className="innerpage-title">COLLECTION</h2>
 
-        <p className="desc">
+        <p className="title-desc">
           From brand identities to interactive digital platforms — a cross-section
           of work that defines who we are.
         </p>

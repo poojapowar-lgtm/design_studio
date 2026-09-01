@@ -41,7 +41,7 @@ const AboutBanner = () => {
                             MITID Design Studio • Pune, India
                         </p>
 
-                        <h1 className="banner-title" style={{ fontSize: "clamp(16px, 3vw, 45px)" }}> <span>Where Ideas Meet </span>Impact</h1>
+                        <h1 className="banner-title" style={{ fontSize: "clamp(24px, 3vw, 45px)" }}> <span>Where Ideas Meet </span>Impact</h1>
 
 
                         <p className="banner-description">
@@ -58,7 +58,7 @@ const AboutBanner = () => {
                             <div className="about-bnr-card" key={card.id}>
                                 <div className="about-card-overlay">
                                     <h1 className="banner-title" style={{ margin: "0", fontSize: "clamp(16px, 3vw, 45px)" }}>{card.title}</h1>
-                                    <p style={{ textTransform: "uppercase", color:"white"}}>{card.subtitle}</p>
+                                    <p style={{ textTransform: "uppercase", color: "white" }}>{card.subtitle}</p>
                                 </div>
                             </div>
                         ))}

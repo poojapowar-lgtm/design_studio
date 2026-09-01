@@ -8,8 +8,8 @@ export default function ContactSection() {
         {/* LEFT SIDE */}
         <div className="left">
           <p className="tag">CONTACT US</p>
-          <h2>LET’S MAKE SOMETHING TOGETHER</h2>
-          <p className="subtext">
+          <h2 className="innerpage-title">LET’S MAKE SOMETHING TOGETHER</h2>
+          <p className="title-desc">
             Whether you have a brief or just an idea — we’d love to hear from you.
           </p>
 
