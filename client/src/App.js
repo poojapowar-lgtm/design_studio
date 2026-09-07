@@ -7,8 +7,6 @@ import Footer from "./Components/Footer/Footer";
 import Header from "./Components/header/Header";
 import MainRoutes from "./MainRoutes";
 
-
-
 function App() {
   return (
     <BrowserRouter>
