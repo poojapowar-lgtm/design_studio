@@ -133,6 +133,14 @@ export default function ContactSection() {
             />
 
             <input
+              type="tel"
+              name="phone"
+              placeholder="Phone Number"
+              required
+              pattern="[0-9]{10}"
+              maxLength="10"
+            />
+            <input
               type="text"
               name="service"
               placeholder="Service Interested In"
