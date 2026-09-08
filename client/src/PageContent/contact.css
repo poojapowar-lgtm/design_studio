@@ -1,31 +1,46 @@
 .contact {
   background: rgb(245, 244, 240);
-  padding: clamp(20px, 1.5vw, 60px) ;
+  padding: clamp(20px, 3vw, 60px);
   font-family: sans-serif;
+  box-sizing: border-box;
 }
 
 .container {
   display: grid;
   grid-template-columns: 1fr 1.2fr;
-  gap: clamp(30px, 5vw, 80px);
+  gap: clamp(25px, 5vw, 80px);
+  width: 100%;
   max-width: 1400px;
-  margin: auto;
+  margin: 0 auto;
+  box-sizing: border-box;
 }
 
+.phone-link {
+  text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.phone-link p:hover {
+  color: blue;
+}
+
+/* ================= INFO ================= */
 
 .info h4 {
-  margin-bottom: 20px;
+  margin-bottom: clamp(15px, 2vw, 20px);
+  font-size: clamp(16px, 1.5vw, 20px);
 }
 
 .item {
   display: flex;
-  gap: 15px;
-  margin-bottom: 20px;
+  gap: clamp(10px, 1.2vw, 15px);
+  margin-bottom: clamp(15px, 2vw, 20px);
 }
 
 .icon {
-  width: 28px;
-  height: 28px;
+  width: clamp(24px, 2vw, 28px);
+  height: clamp(24px, 2vw, 28px);
+  min-width: clamp(24px, 2vw, 28px);
   border-radius: 5px;
   background: rgb(232, 160, 32);
 }
@@ -39,87 +54,153 @@
   font-size: clamp(12px, 1vw, 14px);
   margin: auto 0;
   color: #444;
+  line-height: 1.5;
 }
 
 .item small {
-  font-size: 12px;
+  font-size: clamp(10px, 0.9vw, 12px);
   color: #777;
 }
 
-/* HOURS */
+/* ================= HOURS ================= */
+
 .hours {
-  margin-top: 30px;
+  margin-top: clamp(20px, 3vw, 30px);
   background: #000;
   color: #fff;
-  padding:10px;
+  padding: clamp(10px, 1.5vw, 15px);
+  box-sizing: border-box;
 }
 
 .hours h5 {
   color: rgb(232, 160, 32);
-  margin:5px;
+  margin: 5px;
+  font-size: clamp(13px, 1.2vw, 16px);
 }
 
-.hours p{
+.hours p {
   color: whitesmoke;
+  font-size: clamp(12px, 1vw, 14px);
+  line-height: 1.5;
 }
 
-/* RIGHT */
+/* ================= RIGHT ================= */
+
 .contact-right {
+  width: 100%;
   background: #fff;
   border: 1px solid #ddd;
+  box-sizing: border-box;
 }
 
 .contact-right h4 {
-  margin-bottom: 20px;
+  margin-bottom: clamp(15px, 2vw, 20px);
+  font-size: clamp(16px, 1.5vw, 20px);
 }
 
-/* FORM */
+/* ================= FORM ================= */
+
 .form {
   display: flex;
   flex-direction: column;
-  gap: 15px;
+  gap: clamp(10px, 1.5vw, 15px);
+  width: 100%;
   background: white;
-  padding: 20px;
+  padding: clamp(15px, 2vw, 25px);
+  box-sizing: border-box;
 }
 
 .row {
   display: flex;
-  gap: 15px;
+  gap: clamp(10px, 1.5vw, 20px);
+  width: 100%;
+  box-sizing: border-box;
 }
 
+.row input {
+  flex: 1;
+  min-width: 0;
+  width: 100%;
+  box-sizing: border-box;
+}
 
 input,
 textarea {
-  padding: clamp(5px, 1vw, 10px);
+  width: 100%;
+  padding: clamp(8px, 1vw, 10px);
   border: 1px solid #ddd;
   background-color: rgb(245, 244, 240);
   font-size: clamp(12px, 1vw, 14px);
   outline: none;
+  box-sizing: border-box;
 }
 
 textarea {
-  height: 120px;
+  height: clamp(100px, 10vw, 120px);
   resize: none;
 }
 
-/* BUTTON */
+/* ================= BUTTON ================= */
+
 button {
+  width: 100%;
   background: rgb(232, 160, 32);
   border: none;
-  padding: clamp(12px, 1.2vw, 16px);
+  padding: clamp(11px, 1.2vw, 16px);
+  font-size: clamp(12px, 1vw, 14px);
   font-weight: 600;
   cursor: pointer;
   transition: 0.3s;
 }
 
+button:hover {
+  opacity: 0.9;
+}
 
-/* RESPONSIVE */
+/* ================= TABLET ================= */
+
 @media (max-width: 900px) {
   .container {
     grid-template-columns: 1fr;
+    gap: clamp(25px, 5vw, 40px);
+  }
+
+  .contact-right {
+    width: 100%;
+  }
+}
+
+/* ================= MOBILE ================= */
+
+@media (max-width: 600px) {
+  .contact {
+    padding: clamp(15px, 4vw, 25px);
+  }
+
+  .container {
+    grid-template-columns: 1fr;
+    gap: clamp(25px, 6vw, 35px);
   }
 
   .row {
     flex-direction: column;
+    gap: clamp(10px, 3vw, 15px);
+  }
+
+  .row input {
+    width: 100%;
+  }
+
+  .form {
+    padding: clamp(15px, 4vw, 20px);
+    gap: clamp(10px, 3vw, 15px);
+  }
+
+  .item {
+    gap: 10px;
+  }
+
+  .hours {
+    margin-top: 20px;
   }
 }

@@ -26,6 +26,14 @@ const teamData = [
     img: "/assets/images/SOHNIT_KUMAR.avif",
     desc: `Sohnit blends technology and imagination to create thoughtful, user-focused products. With experience in healthcare, agriculture, and consumer design, he’s worked with BARC, Indus Biotech, ECIL and Yipli. Trained in engineering, product design, and fine arts, he brings a unique, multidisciplinary lens to every project.`,
   },
+    {
+    id: 4,
+    post: "DR",
+    name: "Prof.Dandeswar ",
+    surname: "Bisoyi ",
+    img: "/assets/images/dandeswar-bisoyi.png",
+    desc: `An creative technologist, educator, and designer specializing in the convergence of real-time technologies that are transforming design education and innovation. With more than two decades of experience in design education and research, he combines academic leadership, technological expertise, and creative practice to drive meaningful impact.`,
+  },
 ];
 
 const TeamSection = () => {

@@ -31,7 +31,12 @@ export default function ContactSection() {
               <div className="icon"></div>
               <div>
                 <span>EMAIL</span>
-                <p>Sohnit.Kumar@mituniversity.edu.in</p>
+                <a
+                  href="mailto:Sohnit.Kumar@mituniversity.edu.in"
+                  className="phone-link"
+                >
+                  <p>Sohnit.Kumar@mituniversity.edu.in</p>
+                </a>
               </div>
             </div>
 
@@ -39,7 +44,13 @@ export default function ContactSection() {
               <div className="icon"></div>
               <div>
                 <span>PHONE</span>
-                <p>+91 20 67652374</p>
+                <a href="tel:+912067652374" className="phone-link">
+                  <p>+91 20 67652374</p>
+                </a>
+
+                <a href="tel:+919931123774" className="phone-link">
+                  <p>+91 9931123774</p>
+                </a>
                 <small>Mon - Sat, 9am – 6pm</small>
               </div>
             </div>
@@ -125,21 +136,24 @@ export default function ContactSection() {
               />
             </div>
 
-            <input
-              type="email"
-              name="email"
-              placeholder="Email Address"
-              required
-            />
+            <div className="row">
+              <input
+                type="email"
+                name="email"
+                placeholder="Email Address"
+                required
+              />
 
-            <input
-              type="tel"
-              name="phone"
-              placeholder="Phone Number"
-              required
-              pattern="[0-9]{10}"
-              maxLength="10"
-            />
+              <input
+                type="tel"
+                name="phone"
+                placeholder="Phone Number"
+                required
+                pattern="[0-9]{10}"
+                maxLength="10"
+              />
+            </div>
+
             <input
               type="text"
               name="service"

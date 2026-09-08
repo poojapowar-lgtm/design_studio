@@ -26,14 +26,7 @@ const leaders = [
     img: "/assets/images/SUNIL_KARAD.avif",
     desc: `Executive Director and Trustee, Dr. Sunil Karad drives innovation and strategic growth across MIT institutions. He focuses on integrating technology, entrepreneurship, and scalable education models to expand impact.`,
   },
-  {
-    id: 4,
-    post: "DR",
-    name: "Prof.Dandeswar ",
-    surname: "Bisoyi ",
-    img: "/assets/images/dandeswar-bisoyi.png",
-    desc: `An creative technologist, educator, and designer specializing in the convergence of real-time technologies that are transforming design education and innovation. With more than two decades of experience in design education and research, he combines academic leadership, technological expertise, and creative practice to drive meaningful impact.`,
-  },
+
 ];
 
 const InspirationSection = () => {

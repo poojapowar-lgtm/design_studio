@@ -1,6 +1,6 @@
 .collection-container {
   background: #f4f4f4;
-  padding: clamp(20px, 5vw, 60px) 0;
+  padding: clamp(20px, 5vw, 60px);
   font-family: sans-serif;
 }
 
@@ -28,6 +28,7 @@
   font-size: clamp(10px, 1vw, 12px);
   cursor: pointer;
   transition: 0.3s;
+  max-width: fit-content;
 }
 
 .filters button.active {
@@ -51,7 +52,7 @@
 
 .card img {
   width: 100%;
-  height:clamp(150px, 25vw, 280px);
+  height: clamp(150px, 25vw, 280px);
   display: block;
   object-fit: cover;
 }

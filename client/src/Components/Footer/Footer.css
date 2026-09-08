@@ -9,12 +9,12 @@
 
 /* FOOTER LOGO */
 .ft-logo1 {
-  /* background-color: #fff; */
   width: auto;
   height: clamp(52px, 6vw, 100px);
   display: block;
+  margin-left: 0;
+  margin-right: auto;
 }
-
 
 /* ADDRESS */
 .ft-address {
@@ -211,6 +211,7 @@
   }
 
   .ft-address {
+    margin: 0;
     text-align: center;
     max-width: clamp(250px, 80vw, 400px);
   }

@@ -39,7 +39,6 @@ const Footer = () => {
             Loni Kalbhor, Solapur Highway,
             Pune, 412201. Maharashtra , India
           </p>
-
         </div>
 
         <div className="links-section">
@@ -90,7 +89,8 @@ const Footer = () => {
                   Instagram
                 </a>
               </li>
-              <li>contact</li>
+              <li>
+                 <Link to="/contact">contact</Link></li>
             </ul>
           </div>
 
